@@ -1,6 +1,8 @@
+import "./App.css"
+
 export function Todo({ id, taskName, callback}) {
 	return (
-		<li key={id}>
+		<li className="toDo" key={id}>
 			{taskName}
 			<button callback={callback} onClick={() => callback(id)}>Delete task</button>
 		</li>

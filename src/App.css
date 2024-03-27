@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.toDo {
+	display: flex;
+	gap: 1rem;
+}
+.cardTodo {
+	display: flex;
+	width: 10%;
+	gap: 1rem;
+	padding: 1rem;
+	flex-direction: column;
+}
+
+.inputWrapper {
+	display: flex;
+	gap: 1rem;
+}
+
+.ulTodo {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	list-style-type: none;
+}
