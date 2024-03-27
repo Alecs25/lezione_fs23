@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Todo } from "./Todo";
 
 function App() {
 	const [todo, setTodo] = useState([]);
@@ -25,10 +26,8 @@ function App() {
 				{todo &&
 					todo.map((e, i) => {
 						return (
-							<li key={i}>
-								{e}
-								<button onClick={() => handleDelete(i)}>Delete task</button>
-							</li>
+							<Todo id={i} callback={handleDelete}
+              taskName={e}></Todo>
 						);
 					})}
 			</ul>
